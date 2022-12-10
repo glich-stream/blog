@@ -35,44 +35,50 @@ echo "::: Downloading feed"
 curl -s "$FEED_URL" > "${TMP_DIR}/feed.xml"
 echo "    Feed downloaded to: ${TMP_DIR}/feed.xml"
 
-# Parse the feed and get the latest entry only
-echo "::: Parsing feed"
-ENTRY_TITLE="$(xpath -q -e "//entry[1]/title/text()" "${TMP_DIR}/feed.xml")"
-ENTRY_DESCRIPTION="$(xpath -q -e "//entry[1]/media:group/media:description/text()" "${TMP_DIR}/feed.xml")"
-ENTRY_PUBLISHED="$(xpath -q -e "//entry[1]/published/text()" "${TMP_DIR}/feed.xml")"
-ENTRY_URL="$(xpath -q -e "//entry[1]/link/@href" "${TMP_DIR}/feed.xml" | sed -e 's/href=//g')"
+# Loop through each entry in the feed
+COUNT="$(xpath -q -e "count(//entry/title)" "${TMP_DIR}/feed.xml")"
+echo "::: Found ${COUNT} entries in the feed"
+# For loop in bash
+for ((i=1; i<=COUNT; i++))
+do
+    # Parse the feed and get the latest entry only
+    echo "::: Parsing feed"
+    ENTRY_TITLE="$(xpath -q -e "//entry[${i}]/title/text()" "${TMP_DIR}/feed.xml")"
+    ENTRY_DESCRIPTION="$(xpath -q -e "//entry[${i}]/media:group/media:description/text()" "${TMP_DIR}/feed.xml")"
+    ENTRY_PUBLISHED="$(xpath -q -e "//entry[${i}]/published/text()" "${TMP_DIR}/feed.xml")"
+    ENTRY_URL="$(xpath -q -e "//entry[${i}]/link/@href" "${TMP_DIR}/feed.xml" | sed -e 's/href=//g')"
 
-# Get the current date in the format YYYY-MM-DD
-DATE=$(date -u +"%Y-%m-%d")
+    # Get the current date in the format YYYY-MM-DD
+    DATE=$(date -u +"%Y-%m-%d")
 
-# Remove all non-alphanumeric characters from the title
-# Replace spaces with dashes in the title
-# and convert to lowercase
-FILENAME="$(echo \""${ENTRY_TITLE}\"" | sed -e 's/[^[:alnum:] ]//g' | sed -e 's/ /-/g' | tr '[:upper:]' '[:lower:]')"
+    # Remove all non-alphanumeric characters from the title
+    # Replace spaces with dashes in the title
+    # and convert to lowercase
+    FILENAME="$(echo \""${ENTRY_TITLE}\"" | sed -e 's/[^[:alnum:] ]//g' | sed -e 's/ /-/g' | tr '[:upper:]' '[:lower:]')"
 
-# If _posts directory doesn't exist, create it
-if [ ! -d "${DIR}/../_posts" ]; then
-    echo "::: Creating _posts directory"
-    mkdir "${DIR}/../_posts"
-fi
+    # If _posts directory doesn't exist, create it
+    if [ ! -d "${DIR}/../_posts" ]; then
+        echo "::: Creating _posts directory"
+        mkdir "${DIR}/../_posts"
+    fi
 
-# If the file exists already, exit without an error
-if [ -f "${DIR}/../_posts/${DATE}-${FILENAME}.md" ]; then
-    echo "::: Post already exists, nothing to do here. Exiting"
-    exit 0
-fi
+    # If the file exists already, exit without an error
+    if [ -f "${DIR}/../_posts/${DATE}-${FILENAME}.md" ]; then
+        echo "::: Post already exists, nothing to do here. Exiting"
+        continue
+    fi
 
-# Replace all urls in the entry description with markdown links
-ENTRY_DESCRIPTION="$(echo "${ENTRY_DESCRIPTION}" | sed -e 's/\(http[s]*:\/\/[^\S ]*\)/[\1](\1)/g')"
+    # Replace all urls in the entry description with markdown links
+    ENTRY_DESCRIPTION="$(echo "${ENTRY_DESCRIPTION}" | sed -e 's/\(http[s]*:\/\/[^\S ]*\)/[\1](\1)/g')"
 
-# Create the file
-echo "::: Creating post file"
-echo "    ${DIR}/../_posts/${DATE}-${FILENAME}.md"
-touch "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    # Create the file
+    echo "::: Creating post file"
+    echo "    ${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    touch "${DIR}/../_posts/${DATE}-${FILENAME}.md"
 
-# Write the front matter to the file
-echo "::: Writing front matter to the post file"
-cat <<EOF > "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    # Write the front matter to the file
+    echo "::: Writing front matter to the post file"
+    cat <<EOF > "${DIR}/../_posts/${DATE}-${FILENAME}.md"
 ---
 layout: post
 title:  '${ENTRY_TITLE}'
@@ -81,13 +87,14 @@ categories: youtube
 ---
 EOF
 
-# Write the description to the file and embed the youtube video
-echo "::: Writing details to the post file"
-cat <<EOF >> "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    # Write the description to the file and embed the youtube video
+    echo "::: Writing details to the post file"
+    cat <<EOF >> "${DIR}/../_posts/${DATE}-${FILENAME}.md"
 {% youtube ${ENTRY_URL} %}
 <br />
 ${ENTRY_DESCRIPTION}
 EOF
+done
 
 # Remove the temporary folder
 echo "::: Removing temporary folder"
