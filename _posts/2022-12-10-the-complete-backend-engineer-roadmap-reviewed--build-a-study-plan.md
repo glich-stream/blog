@@ -3,6 +3,7 @@ layout: post
 title:  'The COMPLETE backend engineer roadmap reviewed | Build a study plan'
 date:   '2022-11-12T18:46:16+00:00'
 categories: youtube
+tags: ['roadmaps', 'softwareengineering', 'prioritization', 'backenddevelopment', 'architecture', 'fundamentaltopics', 'technicalroadmaps', 'studyplan', 'coding']
 ---
 {% youtube  "https://www.youtube.com/watch?v=1piAu0IfJdA" %}
 <br />

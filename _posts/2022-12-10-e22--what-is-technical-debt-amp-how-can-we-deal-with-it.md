@@ -2,7 +2,7 @@
 layout: post
 title:  'E22 - What is Technical Debt &amp; how can we deal with it?'
 date:   '2022-11-25T14:00:21+00:00'
-categories: youtube
+categories: youtube podcast
 ---
 {% youtube  "https://www.youtube.com/watch?v=ZOm_Saa_Uv8" %}
 <br />

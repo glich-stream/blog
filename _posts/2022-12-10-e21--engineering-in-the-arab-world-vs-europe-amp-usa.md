@@ -2,7 +2,8 @@
 layout: post
 title:  'E21 - Engineering in the Arab World vs Europe &amp; USA'
 date:   '2022-10-27T13:00:33+00:00'
-categories: youtube
+categories: youtube podcast
+tags: ['softwareengineering', 'europe', 'usa', 'middleeast', 'northafrica', 'techhubs', 'talent', 'internationalcompetition', 'techsector', 'webdevelopment', 'accessibility', 'webperformance', 'developingcountries', 'contentcuration', 'skillset', 'immigration']
 ---
 {% youtube  "https://www.youtube.com/watch?v=b5dD8ADpLs4" %}
 <br />
