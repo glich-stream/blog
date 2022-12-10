@@ -6,12 +6,12 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
-cotes:
-  name: Cotes Chung
-  twitter: cotes2020
-  url: https://github.com/cotes2020/
+glich_stream:
+  name: glich_stream
+  twitter: bassemdy
+  url: https://glich.stream
 
-sille_bille:
-  name: Dinesh Prasanth Moluguwan Krishnamoorthy
-  twitter: dinesh_MKD
-  url: https://github.com/SilleBille/
+bassem:
+  name: Bassem Dghaidi
+  twitter: bassemdy
+  url: https://bassemdy.com
