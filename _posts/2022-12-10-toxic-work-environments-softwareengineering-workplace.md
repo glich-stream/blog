@@ -14,3 +14,9 @@ Unhealthy hierarchies can create non-productive power dynamics, such as business
 If a company does not invest in the education and training of its employees, it may be a sign that it does not value its workforce. Training and education should not be seen as an expense, but as an investment in the company's future.
 
 A lack of trust and heavy compartmentalization can also be signs of a toxic work environment. If only a few people have a comprehensive understanding of how the company operates and what is happening within different departments, it can be frustrating and alienating for employees who want to understand the big picture. If you are the kind of person who likes to see the whole picture and understand how different parts of the company fit together, working in a heavily compartmentalized organization may not be a good fit for you.
+
+▬▬▬▬▬▬ Support the channel 💜 ▬▬▬▬▬▬
+
+Every little bit helps ✨
+- Join the journey on Patreon: [https://www.patreon.com/glich_stream](https://www.patreon.com/glich_stream)
+- 1 time support: [https://www.buymeacoffee.com/glich.stream](https://www.buymeacoffee.com/glich.stream)

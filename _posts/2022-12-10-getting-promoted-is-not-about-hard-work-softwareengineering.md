@@ -16,3 +16,9 @@ Getting promoted is not about how much effort you put into your work, but about 
 1. Build a solid network among your colleagues, peers, and managers. This network should be focused on how your work positively impacts them. It could be documentation that you wrote, initiatives you have led, or insights you shared with your team. In short, it's about how you have helped them level up.
 
 Bottom line: to grow, you need to master the art of marketing and growing through the leveling up of others.
+
+▬▬▬▬▬▬ Support the channel 💜 ▬▬▬▬▬▬
+
+Every little bit helps ✨
+- Join the journey on Patreon: [https://www.patreon.com/glich_stream](https://www.patreon.com/glich_stream)
+- 1 time support: [https://www.buymeacoffee.com/glich.stream](https://www.buymeacoffee.com/glich.stream)

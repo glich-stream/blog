@@ -17,3 +17,9 @@ He may be thinking that web systems design is not as difficult as rocket science
 Lastly, it is speculated that he values working hard, resilience, time, and less resistance to his guidance more than institutional knowledge, experience, and resistance to his guidance.
 
 If he can keep Twitter running long enough to identify successful revenue streams, he may go down in history as having pulled off a miracle.
+
+▬▬▬▬▬▬ Support the channel 💜 ▬▬▬▬▬▬
+
+Every little bit helps ✨
+- Join the journey on Patreon: [https://www.patreon.com/glich_stream](https://www.patreon.com/glich_stream)
+- 1 time support: [https://www.buymeacoffee.com/glich.stream](https://www.buymeacoffee.com/glich.stream)

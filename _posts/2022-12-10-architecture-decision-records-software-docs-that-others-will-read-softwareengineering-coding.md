@@ -17,3 +17,9 @@ The status section reflects the outcome of discussing the document with stakehol
 After you have implemented the decision, you can come back to the ADR to describe the consequences and outcomes of the implementation.
 
 It is important not to be dogmatic about using ADRs. They are a tool, and like any other tool, they require discipline and alignment to get the most value out of them.
+
+▬▬▬▬▬▬ Support the channel 💜 ▬▬▬▬▬▬
+
+Every little bit helps ✨
+- Join the journey on Patreon: [https://www.patreon.com/glich_stream](https://www.patreon.com/glich_stream)
+- 1 time support: [https://www.buymeacoffee.com/glich.stream](https://www.buymeacoffee.com/glich.stream)
