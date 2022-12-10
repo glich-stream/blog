@@ -4,8 +4,10 @@ title:  'E21 - Engineering in the Arab World vs Europe &amp; USA'
 date:   '2022-10-27T13:00:33+00:00'
 categories: youtube podcast
 tags: ['softwareengineering', 'europe', 'usa', 'middleeast', 'northafrica', 'techhubs', 'talent', 'internationalcompetition', 'techsector', 'webdevelopment', 'accessibility', 'webperformance', 'developingcountries', 'contentcuration', 'skillset', 'immigration']
+anchor_url: 'https://anchor.fm/glich/embed/episodes/E21---Engineering-in-the-Arab-World-vs-Europe--USA-e1pl21f/a-a8o16dp'
 ---
 {% youtube  "https://www.youtube.com/watch?v=b5dD8ADpLs4" %}
+{% include anchor-embed.html %}
 <br />
 How does software engineering in Europe or the USA defer from the work we do in the Middle East and North Africa region? What are some of the biggest challenges preventing the Middle East and North Africa from becoming technology hubs? What’s the caliber of the talent available in the region? Can it compete internationally?
 

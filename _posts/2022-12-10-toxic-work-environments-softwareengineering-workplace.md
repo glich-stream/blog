@@ -2,7 +2,7 @@
 layout: post
 title:  'Toxic work environments #softwareengineering #workplace'
 date:   '2022-12-01T19:52:53+00:00'
-categories: youtube
+categories: youtube short
 ---
 {% youtube  "https://www.youtube.com/watch?v=sJ8k46oHX1Y" %}
 <br />
