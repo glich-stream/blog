@@ -5,7 +5,7 @@
 # It takes a single argument, the url of the feed
 ###############################################################################
 # Usage:
-#   ./new_post_from_feed.sh "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw"
+#   ./new_post_from_feed.sh "https://www.youtube.com/feeds/videos.xml?channel_id=ABCD"
 ###############################################################################
 # Requirements:
 #   - bash
@@ -21,7 +21,7 @@ FEED_URL="$1"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [ -z "$FEED_URL" ]; then
-  echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw\""
+  echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=ABCD\""
   exit 1
 fi
 

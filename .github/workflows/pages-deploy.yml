@@ -12,6 +12,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Schedule run every 24 hours (UTC)
+  schedule:
+    - cron: "1 0 * * *" # Every day at 00:01 UTC
+
 permissions:
   contents: read
   pages: write
@@ -23,6 +27,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  pull_content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create posts from feed
+        run: |
+          tools/new_posts_from_feed.sh https://www.youtube.com/feeds/videos.xml?channel_id=UC6iKOXJ9PD-n8DcFPBjLD0w
+
+      - name: Push changes
+        uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a
+        with:
+          commit_message: "Update posts from feed"
+          commit_user_name: link-
+          commit_author: link- <568794+Link-@users.noreply.github.com>
+
   build:
     runs-on: ubuntu-latest
 
