@@ -46,10 +46,9 @@ do
     ENTRY_TITLE="$(xpath -q -e "//entry[${i}]/title/text()" "${TMP_DIR}/feed.xml")"
     ENTRY_DESCRIPTION="$(xpath -q -e "//entry[${i}]/media:group/media:description/text()" "${TMP_DIR}/feed.xml")"
     ENTRY_PUBLISHED="$(xpath -q -e "//entry[${i}]/published/text()" "${TMP_DIR}/feed.xml")"
+    # Extract YYYY-MM-DD from the published date
+    ENTRY_DATE="$(echo "${ENTRY_PUBLISHED}" | cut -d "T" -f 1)"
     ENTRY_URL="$(xpath -q -e "//entry[${i}]/link/@href" "${TMP_DIR}/feed.xml" | sed -e 's/href=//g')"
-
-    # Get the current date in the format YYYY-MM-DD
-    DATE=$(date -u +"%Y-%m-%d")
 
     # Remove all non-alphanumeric characters from the title
     # Replace spaces with dashes in the title
@@ -63,7 +62,7 @@ do
     fi
 
     # If the file exists already, exit without an error
-    if [ -f "${DIR}/../_posts/${DATE}-${FILENAME}.md" ]; then
+    if [ -f "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md" ]; then
         echo "::: Post already exists, nothing to do here. Exiting"
         continue
     fi
@@ -73,12 +72,12 @@ do
 
     # Create the file
     echo "::: Creating post file"
-    echo "    ${DIR}/../_posts/${DATE}-${FILENAME}.md"
-    touch "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    echo "    ${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
+    touch "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 
     # Write the front matter to the file
     echo "::: Writing front matter to the post file"
-    cat <<EOF > "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    cat <<EOF > "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 ---
 layout: post
 title:  '${ENTRY_TITLE}'
@@ -89,7 +88,7 @@ EOF
 
     # Write the description to the file and embed the youtube video
     echo "::: Writing details to the post file"
-    cat <<EOF >> "${DIR}/../_posts/${DATE}-${FILENAME}.md"
+    cat <<EOF >> "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 {% youtube ${ENTRY_URL} %}
 <br />
 ${ENTRY_DESCRIPTION}
