@@ -27,7 +27,10 @@ description: >-                        # used by seo meta and the atom feed
   Founded by Bassem Dghaidi, glich is a platform where professional software engineers, thought leaders, engineering managers, and founders share their insights and expertise on code, system design, and engineering management. From moderate to advanced topics, glich has something for every tech professional. Explore our content, connect with fellow engineers, and level up!
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://blog.glich.stream'
+
+plugins:
+  - jekyll-sitemap
 
 github:
   username: Link-             # change to your github username
