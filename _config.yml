@@ -24,7 +24,7 @@ title: glich.stream
 tagline: Engineering lessons from the real world!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Founded by Bassem Dghaidi, glich is a platform where professional software engineers, thought leaders, engineering managers, and founders share their insights and expertise on code, system design, and engineering management. From moderate to advanced topics, glich has something for every tech professional. Explore our content, connect with fellow engineers, and level up!
+  glich is a platform where professional software engineers, thought leaders, engineering managers, and founders share their insights and expertise on code, system design, and engineering management. From moderate to advanced topics, glich has something for every tech professional. Explore our content, connect with fellow engineers, and level up! glich was founded by Bassem Dghaidi in 2021
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://blog.glich.stream'
@@ -47,11 +47,10 @@ social:
     # The first element serves as the copyright owner's link
     - https://twitter.com/bassemdy      # change to your twitter homepage
     - https://github.com/Link-       # change to your github homepage
-    # Uncomment below to add more social links
     - https://www.facebook.com/bassemdy
     - https://www.linkedin.com/in/bassemdghaidy/
 
-google_site_verification:               # fill in to your verification string
+google_site_verification: 'OSr07Pxc-O2Wo4qK6MjuiPDX6YlUARoeIUj2TMxvV5o'             # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
