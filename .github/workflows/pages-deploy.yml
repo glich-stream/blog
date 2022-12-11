@@ -35,6 +35,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      
+      - name: Setup xpath
+        run: |
+          sudo apt-get install -y libxml-xpath-perl
 
       - name: Create posts from feed
         run: |
