@@ -17,7 +17,7 @@ on:
     - cron: "1 0 * * *" # Every day at 00:01 UTC
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
