@@ -11,6 +11,11 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force deploy'
+        required: false
+        default: 'false'
 
   # Schedule run every 24 hours (UTC)
   schedule:
@@ -71,6 +76,7 @@ jobs:
         id: files
         
       - name: Check for changes
+        if: ${{ github.event.inputs.force == 'false' }}
         run: |
           # Exit if no changes detected
           if [ -z "${{ steps.files.outputs.all }}" ]; then
