@@ -102,7 +102,5 @@ done
 echo ":::INFO::: Removing temporary folder"
 rm -rf "${TMP_DIR}"
 
-if [ "$NO_UPDATES" = false ] ; then
-    echo "::notice :: No new posts were found. Aborting." 
-    exit 1
-fi
+# Set the job outputs
+echo "no_content_updates=${NO_UPDATES}" >> $GITHUB_OUTPUT

@@ -29,6 +29,8 @@ concurrency:
 jobs:
   pull_content:
     runs-on: ubuntu-latest
+    outputs:
+      no_content_updates: ${{ steps.create_posts.outputs.no_content_updates }}
 
     steps:
       - name: Checkout
@@ -41,6 +43,7 @@ jobs:
           sudo apt-get install -y libxml-xpath-perl
 
       - name: Create posts from feed
+        id: create_posts
         run: |
           tools/new_posts_from_feed.sh "https://www.youtube.com/feeds/videos.xml?channel_id=UC6iKOXJ9PD-n8DcFPBjLD0w"
 
