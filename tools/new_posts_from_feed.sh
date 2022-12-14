@@ -19,6 +19,7 @@ set -e # exit on error
 
 FEED_URL="$1"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+NO_UPDATES=false
 
 if [ -z "$FEED_URL" ]; then
   echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=ABCD\""
@@ -26,23 +27,23 @@ if [ -z "$FEED_URL" ]; then
 fi
 
 # Get the machine's temporary folder
-echo "::: Creating temporary folder"
+echo ":::INFO::: Creating temporary folder"
 TMP_DIR="$(mktemp -d)"
 echo "    Temporary folder: ${TMP_DIR}"
 
 # Download the feed
-echo "::: Downloading feed"
+echo ":::INFO::: Downloading feed"
 curl -s "$FEED_URL" > "${TMP_DIR}/feed.xml"
 echo "    Feed downloaded to: ${TMP_DIR}/feed.xml"
 
 # Loop through each entry in the feed
 COUNT="$(xpath -q -e "count(//entry/title)" "${TMP_DIR}/feed.xml")"
-echo "::: Found ${COUNT} entries in the feed"
+echo ":::INFO::: Found ${COUNT} entries in the feed"
 # For loop in bash
 for ((i=1; i<=COUNT; i++))
 do
     # Parse the feed and get the latest entry only
-    echo "::: Parsing feed"
+    echo ":::INFO::: Parsing feed"
     ENTRY_TITLE="$(xpath -q -e "//entry[${i}]/title/text()" "${TMP_DIR}/feed.xml")"
     ENTRY_DESCRIPTION="$(xpath -q -e "//entry[${i}]/media:group/media:description/text()" "${TMP_DIR}/feed.xml")"
     ENTRY_PUBLISHED="$(xpath -q -e "//entry[${i}]/published/text()" "${TMP_DIR}/feed.xml")"
@@ -57,26 +58,28 @@ do
 
     # If _posts directory doesn't exist, create it
     if [ ! -d "${DIR}/../_posts" ]; then
-        echo "::: Creating _posts directory"
+        echo ":::INFO::: Creating _posts directory"
         mkdir "${DIR}/../_posts"
     fi
 
     # If the file exists already, exit without an error
     if [ -f "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md" ]; then
-        echo "::: Post already exists, nothing to do here. Exiting"
+        echo ":::INFO::: Post already exists, nothing to do here. Exiting"
         continue
     fi
+
+    NO_UPDATES=true
 
     # Replace all urls in the entry description with markdown links
     ENTRY_DESCRIPTION="$(echo "${ENTRY_DESCRIPTION}" | sed -e 's/\(http[s]*:\/\/[^\S ]*\)/[\1](\1)/g')"
 
     # Create the file
-    echo "::: Creating post file"
+    echo ":::INFO::: Creating post file"
     echo "    ${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
     touch "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 
     # Write the front matter to the file
-    echo "::: Writing front matter to the post file"
+    echo ":::INFO::: Writing front matter to the post file"
     cat <<EOF > "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 ---
 layout: post
@@ -87,7 +90,7 @@ categories: youtube
 EOF
 
     # Write the description to the file and embed the youtube video
-    echo "::: Writing details to the post file"
+    echo ":::INFO::: Writing details to the post file"
     cat <<EOF >> "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 {% youtube ${ENTRY_URL} %}
 <br />
@@ -96,5 +99,10 @@ EOF
 done
 
 # Remove the temporary folder
-echo "::: Removing temporary folder"
+echo ":::INFO::: Removing temporary folder"
 rm -rf "${TMP_DIR}"
+
+if [ "$NO_UPDATES" = false ] ; then
+    echo "::notice :: No new posts were found. Aborting." 
+    exit 1
+fi
