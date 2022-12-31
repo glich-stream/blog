@@ -74,7 +74,7 @@ jobs:
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
       - name: Check for changes
-        if: ${{ needs.pull_content.outputs.content_updated == false && inputs.force == false}}
+        if: ${{ needs.pull_content.outputs.content_updated == 'false' && inputs.force == 'false' }}
         run: |
           echo ":: notice :: No changes detected, exiting..."
           exit 78
