@@ -74,13 +74,10 @@ jobs:
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
       - name: Check for changes
-        if: ${{ needs.pull_content.outputs.content_updated == false }}
+        if: ${{ needs.pull_content.outputs.content_updated == false && inputs.force == false}}
         run: |
-          # Exit if no changes detected
-          if [ -z "${{ steps.files.outputs.all }}" ]; then
-            echo ":: notice :: No changes detected, exiting..."
-            exit 78
-          fi
+          echo ":: notice :: No changes detected, exiting..."
+          exit 78
 
       - name: Setup Pages
         id: pages
