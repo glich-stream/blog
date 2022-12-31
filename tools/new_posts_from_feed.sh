@@ -83,8 +83,8 @@ do
     cat <<EOF > "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 ---
 layout: post
-title:  '${ENTRY_TITLE}'
-date:   '${ENTRY_PUBLISHED}'
+title:  "${ENTRY_TITLE}"
+date:   "${ENTRY_PUBLISHED}"
 categories: youtube
 ---
 EOF
