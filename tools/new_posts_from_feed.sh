@@ -19,7 +19,7 @@ set -e # exit on error
 
 FEED_URL="$1"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-NO_UPDATES=false
+CONTENT_UPDATED=false
 
 if [ -z "$FEED_URL" ]; then
   echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=ABCD\""
@@ -68,7 +68,7 @@ do
         continue
     fi
 
-    NO_UPDATES=true
+    CONTENT_UPDATED=true
 
     # Replace all urls in the entry description with markdown links
     ENTRY_DESCRIPTION="$(echo "${ENTRY_DESCRIPTION}" | sed -e 's/\(http[s]*:\/\/[^\S ]*\)/[\1](\1)/g')"
@@ -103,4 +103,4 @@ echo ":::INFO::: Removing temporary folder"
 rm -rf "${TMP_DIR}"
 
 # Set the job outputs
-echo "no_content_updates=${NO_UPDATES}" >> $GITHUB_OUTPUT
+echo "content_updated=${CONTENT_UPDATED}" >> $GITHUB_OUTPUT

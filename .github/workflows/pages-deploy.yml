@@ -36,7 +36,7 @@ jobs:
   pull_content:
     runs-on: ubuntu-latest
     outputs:
-      no_content_updates: ${{ steps.create_posts.outputs.no_content_updates }}
+      content_updated: ${{ steps.create_posts.outputs.content_updated }}
 
     steps:
       - name: Checkout
@@ -72,13 +72,9 @@ jobs:
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-        
-      - uses: jitterbit/get-changed-files@b17fbb00bdc0c0f63fcf166580804b4d2cdc2a42
-        if: ${{ inputs.force == false }}
-        id: files
-        
+
       - name: Check for changes
-        if: ${{ inputs.force == false }}
+        if: ${{ needs.pull_content.outputs.content_updated == false }}
         run: |
           # Exit if no changes detected
           if [ -z "${{ steps.files.outputs.all }}" ]; then
