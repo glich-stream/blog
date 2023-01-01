@@ -2,15 +2,17 @@
 layout: post
 title:  'E23 - Software Testing is NOT what you’re familiar with!'
 date:   '2022-12-22T11:00:08+00:00'
-categories: youtube
+anchor_url: 'https://anchor.fm/glich/embed/episodes/E23---Examining-the-nuances-of-Software-Testing-e1sfqf3'
+categories: youtube podcast
 ---
 {% youtube  "https://www.youtube.com/watch?v=HxQbu2ucgic" %}
+{% include anchor-embed.html %}
 <br />
 In this episode, Maaret Pyhäjärvi, a principal test engineer at Vaisala and respected speaker, author, and mentor, discusses the evolution of software testing &amp; quality assurance and the role of testing engineers in the design process. We cover the challenges and benefits of implementing CI/CD and how to effectively involve testing engineers in this process, as well as code quality control and the measurement of software quality. We also discuss the agile methodology and the role of estimates in planning, and explore the concept of exploratory testing. Finally, we offer some insights on the future of software engineering and conclude with advice for those interested in pursuing a career in this field.
 
 ▬▬▬▬▬▬ Resources &amp; References 📕 ▬▬▬▬▬▬
 
-- Maaret’s online presence: [[https://maaretp.com/](https://maaretp.com/)](https://maaretp.com/](https://maaretp.com/))
+- Maaret’s online presence: [https://maaretp.com/](https://maaretp.com/)
 
 ▬▬▬▬▬▬ Chapters 🕐  ▬▬▬▬▬▬
 
