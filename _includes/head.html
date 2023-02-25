@@ -104,6 +104,9 @@
 
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
 
+  <!-- GDPR compliant, tracking free analytics -->
+  <script defer data-domain="blog.glich.stream" src="https://plausible.io/js/script.js"></script>
+
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}
