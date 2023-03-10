@@ -93,6 +93,7 @@ EOF
     echo ":::INFO::: Writing details to the post file"
     cat <<EOF >> "${DIR}/../_posts/${ENTRY_DATE}-${FILENAME}.md"
 {% youtube ${ENTRY_URL} %}
+{% include anchor-embed.html %}
 <br />
 ${ENTRY_DESCRIPTION}
 EOF
