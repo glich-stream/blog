@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "E25 - Neurodivergence and the tech industry"
-date:   "2023-01-18T15:37:33+00:00"
+date:   "2023-01-19T15:37:33+00:00"
 anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E25---Neurodivergence-and-the-tech-industry-e1tilou/a-a96fuou'
 categories: youtube podcast
 ---
