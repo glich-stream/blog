@@ -2,9 +2,11 @@
 layout: post
 title:  "E25 - Neurodivergence and the tech industry"
 date:   "2023-01-18T15:37:33+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E25---Neurodivergence-and-the-tech-industry-e1tilou/a-a96fuou'
+categories: youtube podcast
 ---
 {% youtube  "https://www.youtube.com/watch?v=Y5E-wg_QyoM" %}
+{% include anchor-embed.html %}
 <br />
 Neurodiversity refers to the variance of neurological differences, behaviours and brain functions within the human population. The concept of neurodiversity has become controversial, with some individuals and groups advocating for acceptance and accommodations while others criticise it. 
 
