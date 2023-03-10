@@ -2,9 +2,11 @@
 layout: post
 title:  "E24 - Contracting as a Software Engineer"
 date:   "2023-01-18T15:37:59+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E24---Contracting-as-a-software-engineer-e1tdg5k/a-a95u0jk'
+categories: youtube podcast
 ---
 {% youtube  "https://www.youtube.com/watch?v=6Ml50Z9VtTg" %}
+{% include anchor-embed.html %}
 <br />
 This episode provides an in-depth look into the world of contracting and freelancing, and we share our background and experience in the field. Zac and I discuss why companies may be risk averse in hiring and how startups can compete for talent in a hot market. We also covers practical aspects of contracting such as how many years of experience are needed and how to generate leads, and tips for those who want to start freelancing. We also address important concerns for contractors such as how to navigate uncertain times and prepare for retirement.
 
