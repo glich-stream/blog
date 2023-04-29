@@ -2,7 +2,7 @@
 layout: post
 title:  "Building a GitHub CLI extension in Go (Part 1)"
 date:   "2023-04-16T02:40:05+00:00"
-categories: youtube
+categories: youtube livestream
 ---
 {% youtube  "https://www.youtube.com/watch?v=sXa6UI8xyRg" %}
 {% include anchor-embed.html %}
