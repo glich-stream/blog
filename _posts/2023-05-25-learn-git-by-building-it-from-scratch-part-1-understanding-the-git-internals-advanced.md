@@ -2,7 +2,7 @@
 layout: post
 title:  "Learn git by BUILDING IT From Scratch! (Part 1) Understanding the git internals [Advanced]"
 date:   "2023-05-25T07:27:43+00:00"
-categories: youtube
+categories: youtube livestream
 ---
 {% youtube  "https://www.youtube.com/watch?v=VJB-TYo9_DY" %}
 {% include anchor-embed.html %}
