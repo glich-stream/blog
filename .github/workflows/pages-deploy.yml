@@ -77,7 +77,7 @@ jobs:
         if: ${{ needs.pull_content.outputs.content_updated == 'false' && github.event_name != 'push' && (inputs.force == false || inputs.force == null) }}
         run: |
           echo ":: notice :: No changes detected, exiting..."
-          exit 78
+          exit 0
 
       - name: Setup Pages
         id: pages
