@@ -21,6 +21,8 @@ FEED_URL="$1"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CONTENT_UPDATED=$FORCE_DEPLOY
 
+echo ":::INFO::: Content updated default: $CONTENT_UPDATED"
+
 if [ -z "$FEED_URL" ]; then
   echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=ABCD\""
   exit 1
