@@ -107,3 +107,4 @@ rm -rf "${TMP_DIR}"
 
 # Set the job outputs
 echo "content_updated=${CONTENT_UPDATED}" >> $GITHUB_OUTPUT
+echo ":::INFO::: Content updated: $CONTENT_UPDATED"
