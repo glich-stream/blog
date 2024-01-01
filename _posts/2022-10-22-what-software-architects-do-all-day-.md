@@ -2,6 +2,7 @@
 layout: post
 title:  'What software architects do all day 🤷‍♂️'
 date:   '2022-10-22T15:08:08+00:00'
+description: 'What do software architects do all day?'
 categories: youtube short
 ---
 {% youtube  "https://www.youtube.com/watch?v=Yvv-zIhj_Qw" %}

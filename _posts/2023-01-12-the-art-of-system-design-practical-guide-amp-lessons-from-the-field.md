@@ -3,6 +3,7 @@ layout: post
 title:  "The Art of System Design: Practical guide &amp; Lessons from the field"
 date:   "2023-01-12T08:59:22+00:00"
 categories: youtube
+description: 'A practical guide to system design, including lessons from the field and best practices.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=3IWpU72eixw" %}
 <br />

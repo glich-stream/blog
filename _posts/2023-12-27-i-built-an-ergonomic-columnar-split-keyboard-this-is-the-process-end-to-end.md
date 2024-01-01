@@ -2,7 +2,8 @@
 layout: post
 title:  "I built an ergonomic columnar split keyboard: this is the process end to end"
 date:   "2023-12-27T20:28:35+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'This is a documentation of my journey building the Aurora Sofle v2 rev1 from splitkb. This is a great guide for beginner mechanical and ergonomic keyboard builders, you'll be able to see the build process end to end and the things you need to pay attention to.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=pE8lcf3MJDw" %}
 {% include anchor-embed.html %}

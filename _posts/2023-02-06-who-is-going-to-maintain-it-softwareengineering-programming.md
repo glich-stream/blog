@@ -2,7 +2,8 @@
 layout: post
 title:  "Who is going to maintain it? #softwareengineering #programming"
 date:   "2023-02-06T20:06:43+00:00"
-categories: youtube
+categories: youtube short
+description: 'Asking who is going to maintain your new code is more important than evaluating the complexity of creating it.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=rhkC31Vt25E" %}
 <br />

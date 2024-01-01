@@ -2,7 +2,8 @@
 layout: post
 title:  "Microservices: More Problems Than Solutions?! Fast deep dive"
 date:   "2023-09-14T20:19:37+00:00"
-categories: youtube
+categories: youtube short
+description: 'Deep dive into microservices, how this architectural pattern came about, the journey through service oriented architecture, what problems it tries to solve and some of the issues that come as a consequence of implementing it this architecture!'
 ---
 {% youtube  "https://www.youtube.com/watch?v=muF9dAy90-U" %}
 {% include anchor-embed.html %}

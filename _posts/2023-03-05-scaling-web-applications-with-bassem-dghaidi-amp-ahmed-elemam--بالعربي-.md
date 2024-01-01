@@ -2,7 +2,8 @@
 layout: post
 title:  "Scaling Web Applications with Bassem Dghaidi &amp; Ahmed Elemam ( بالعربي )"
 date:   "2023-03-05T19:39:56+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'Scaling Web Applications with Bassem Dghaidi &amp; Ahmed Elemam ( بالعربي )'
 ---
 {% youtube  "https://www.youtube.com/watch?v=L9CaSJZEU1o" %}
 <br />

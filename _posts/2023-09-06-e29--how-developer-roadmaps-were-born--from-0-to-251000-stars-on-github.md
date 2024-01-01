@@ -2,7 +2,9 @@
 layout: post
 title:  "E29 - How developer roadmaps were born || From 0 to 251,000 stars on GitHub"
 date:   "2023-09-06T10:48:07+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E29---Creating-roadmap-sh--teaching-and-lessons-from-working-in-product-companies-with-Kamran-Ahmad-e28ivuj/a-aa9j8tq'
+categories: youtube podcast
+description: 'How developer roadmaps were born. A conversation with Kamran Ahmed, creator of roadmap.sh'
 ---
 {% youtube  "https://www.youtube.com/watch?v=25piYXpLBW0" %}
 {% include anchor-embed.html %}

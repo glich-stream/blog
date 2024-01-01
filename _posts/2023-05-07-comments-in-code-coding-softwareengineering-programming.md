@@ -2,7 +2,8 @@
 layout: post
 title:  "Comments in code #coding #softwareengineering #programming"
 date:   "2023-05-07T10:48:03+00:00"
-categories: youtube
+categories: youtube short
+description: 'Why comments in code are important and how to write good comments.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=tZQVLjQVzl4" %}
 {% include anchor-embed.html %}

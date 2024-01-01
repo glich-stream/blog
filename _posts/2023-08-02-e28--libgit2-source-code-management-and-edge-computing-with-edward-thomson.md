@@ -2,7 +2,9 @@
 layout: post
 title:  "E28 - libgit2, source code management and edge computing with Edward Thomson"
 date:   "2023-08-02T12:00:09+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E28---libgit2--source-code-management-and-edge-computing-e27c96g/a-aa5qk51'
+categories: youtube podcast
+description: 'Edward Thomson is a fantastic software engineer, he’s currently the maintainer of libgit2: a pure C implementation of the git core methods provided as a linkable library with a solid API. libgit2 powers GitHub, GitLab, Azure DevOps and many other products.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=h7caBqi1yzY" %}
 {% include anchor-embed.html %}

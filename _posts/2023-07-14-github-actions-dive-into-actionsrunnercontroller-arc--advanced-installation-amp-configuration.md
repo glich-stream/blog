@@ -2,7 +2,8 @@
 layout: post
 title:  "GitHub Actions: Dive into actions-runner-controller (ARC) || Advanced installation &amp; configuration"
 date:   "2023-07-14T11:36:47+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'Actions Runner Controller (ARC) is a Kubernetes operator that orchestrates and scales self-hosted runners for GitHub Actions. With ARC, you can create runner scale sets that automatically scale based on the number of workflows running in your repository, organization, or enterprise.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=_F5ocPrv6io" %}
 {% include anchor-embed.html %}

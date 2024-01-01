@@ -2,7 +2,9 @@
 layout: post
 title:  "E31 - Distributed Systems at Shopify with Ahmad Alhour"
 date:   "2023-12-07T18:47:38+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E31---Distributed-Systems-at-Shopify-with-Ahmad-Alhour-e2cv4ba/a-aan8rj0'
+categories: youtube podcast
+description: 'Staff software engineer Ahmad Alhour joined me to share insights from designing complex systems at Shopify. We discussed distributed systems, managing technology landscapes, testing strategies, flexible architectures, leadership skills, understanding roles, and optimizing teams.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=ANV3qSZc3xE" %}
 {% include anchor-embed.html %}

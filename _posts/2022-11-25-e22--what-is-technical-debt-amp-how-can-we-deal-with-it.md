@@ -4,6 +4,7 @@ title:  'E22 - What is Technical Debt &amp; how can we deal with it?'
 date:   '2022-11-25T14:00:21+00:00'
 categories: youtube podcast
 anchor_url: 'https://anchor.fm/glich/embed/episodes/E22---What-is-Technical-Debt--How-Can-We-Deal-With-It-e1r8v5e/a-a8u55lr'
+description: 'What is technical debt? What is considered technical debt? How is technical debt measured? Who owns technical debt? How to pay-off tech debt?'
 ---
 {% youtube  "https://www.youtube.com/watch?v=ZOm_Saa_Uv8" %}
 {% include anchor-embed.html %}

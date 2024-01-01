@@ -2,6 +2,7 @@
 layout: post
 title:  'Business domain knowledge is ESSENTIAL! #softwareengineering #coding'
 date:   '2022-10-28T08:46:24+00:00'
+description: 'As a developer, how much business domain knowledge should you have?'
 categories: youtube short
 ---
 {% youtube  "https://www.youtube.com/watch?v=XRWy8LrWLGM" %}

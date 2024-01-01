@@ -2,7 +2,8 @@
 layout: post
 title:  "Starting again as a Software Engineer (PART 2)"
 date:   "2023-08-21T17:00:00+00:00"
-categories: youtube
+categories: youtube short
+description: 'Starting again as a Software Engineer what I would do differently'
 ---
 {% youtube  "https://www.youtube.com/watch?v=-KfZKvhRu_E" %}
 {% include anchor-embed.html %}

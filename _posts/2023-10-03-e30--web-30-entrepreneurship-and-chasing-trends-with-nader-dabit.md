@@ -2,7 +2,9 @@
 layout: post
 title:  "E30 - Web 3.0, Entrepreneurship and Chasing Trends with Nader Dabit"
 date:   "2023-10-03T20:38:14+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E30---Web-3-0--Entrepreneurship-and-Chasing-Trends-with-Nader-Dabit-e2a493p/a-aaec87i'
+categories: youtube podcast
+description: 'Nader Dabit is a software engineer, entrepreneur, and a creator currently building in a space that once was one of the most hyped segments of the tech industry. This is a chat with Nader to unpack and challenge his thoughts and ideas about Web 3.0, more specifically the blockchain, cryptocurrencies and social networking protocols.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=H4FMgS43dbw" %}
 {% include anchor-embed.html %}

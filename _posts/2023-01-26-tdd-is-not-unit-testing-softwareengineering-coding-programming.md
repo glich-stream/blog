@@ -2,7 +2,8 @@
 layout: post
 title:  "TDD is not unit testing #softwareengineering #coding #programming"
 date:   "2023-01-26T12:49:08+00:00"
-categories: youtube
+categories: youtube short
+description: 'TDD is not unit testing'
 ---
 {% youtube  "https://www.youtube.com/watch?v=ewnqyjD-T0M" %}
 <br />

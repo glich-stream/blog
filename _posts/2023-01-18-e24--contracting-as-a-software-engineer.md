@@ -4,6 +4,7 @@ title:  "E24 - Contracting as a Software Engineer"
 date:   "2023-01-18T15:37:59+00:00"
 anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E24---Contracting-as-a-software-engineer-e1tdg5k/a-a95u0jk'
 categories: youtube podcast
+description: 'How do you get started as a software engineering contractor?'
 ---
 {% youtube  "https://www.youtube.com/watch?v=6Ml50Z9VtTg" %}
 {% include anchor-embed.html %}

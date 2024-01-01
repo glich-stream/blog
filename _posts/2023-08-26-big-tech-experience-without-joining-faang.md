@@ -2,7 +2,8 @@
 layout: post
 title:  "Big tech experience WITHOUT joining FAANG!"
 date:   "2023-08-26T17:17:00+00:00"
-categories: youtube
+categories: youtube short
+description: 'How to get big tech experience without joining a FAANG company.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=W8J_kMvxm1U" %}
 {% include anchor-embed.html %}

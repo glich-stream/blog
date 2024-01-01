@@ -4,6 +4,7 @@ title:  "E26 - Navigating the Tech Job Market: Insights from a Recruiting Specia
 date:   "2023-03-03T12:09:04+00:00"
 anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E26---Navigating-the-Tech-Job-Market-Insights-from-a-Recruiting-Specialist-e1vpqh4/a-a9e5vje'
 categories: youtube podcast
+descruotion: 'Navigating the Tech Job Market: Insights from a Riot Games Recruiting Specialist'
 ---
 {% youtube  "https://www.youtube.com/watch?v=x7VtffiVlZU" %}
 {% include anchor-embed.html %}

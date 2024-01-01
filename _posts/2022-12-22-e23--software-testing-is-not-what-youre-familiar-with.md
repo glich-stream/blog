@@ -4,6 +4,7 @@ title:  'E23 - Software Testing is NOT what you’re familiar with!'
 date:   '2022-12-22T11:00:08+00:00'
 anchor_url: 'https://anchor.fm/glich/embed/episodes/E23---Examining-the-nuances-of-Software-Testing-e1sfqf3'
 categories: youtube podcast
+description: 'Understanding quality assurance and software testing with Maaret Pyhäjärvi'
 ---
 {% youtube  "https://www.youtube.com/watch?v=HxQbu2ucgic" %}
 {% include anchor-embed.html %}

@@ -2,6 +2,7 @@
 layout: post
 title:  "Stop adding more code! #softwareengineering"
 date:   "2023-01-15T15:21:37+00:00"
+description: 'More code is not always better. Less code can lead to less maintenance work, leaving more room for new projects and advancements.'
 categories: youtube
 ---
 {% youtube  "https://www.youtube.com/watch?v=BP6enddv5FY" %}

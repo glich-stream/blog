@@ -2,7 +2,8 @@
 layout: post
 title:  "DevOps: a term very few understand"
 date:   "2023-09-02T19:38:24+00:00"
-categories: youtube
+categories: youtube short
+description: 'DevOps: a term very few understand. What is DevOps?'
 ---
 {% youtube  "https://www.youtube.com/watch?v=hDhfjjMvvOA" %}
 {% include anchor-embed.html %}

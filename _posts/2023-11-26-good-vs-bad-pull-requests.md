@@ -2,7 +2,8 @@
 layout: post
 title:  "Good vs bad pull requests"
 date:   "2023-11-26T12:32:27+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'What does a good pull request look like? What does a bad pull request look like? This video is all about how you can write good pull requests and how you can optimise your workflow with GitHub Copilot chat to speed up the entire process for you and the team.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=CXEJ5FhHIfo" %}
 {% include anchor-embed.html %}

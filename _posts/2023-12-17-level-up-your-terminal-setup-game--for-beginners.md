@@ -2,7 +2,8 @@
 layout: post
 title:  "Level up your terminal setup game || For beginners"
 date:   "2023-12-17T17:41:21+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'This is how I setup my terminal on all new machines. This is a subset of the CLI and TUI tools I like to use to increase my productivity.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=ViLTKCn23Qo" %}
 {% include anchor-embed.html %}

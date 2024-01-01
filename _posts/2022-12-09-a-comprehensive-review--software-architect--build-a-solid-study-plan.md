@@ -3,6 +3,7 @@ layout: post
 title:  'A "Comprehensive" Review || Software Architect || Build a solid study plan'
 date:   '2022-12-09T12:00:28+00:00'
 categories: youtube
+description: 'Software architect roadmap review. How to build a study plan for software architecture.'
 tags: ['softwarearchitecture', 'continuouslearning', 'professionaldevelopment', 'enterprisearchitect', 'simplification', 'paradigms', 'languages', 'softskills', 'estimations', 'scopeevaluation', 'architectresponsibilities', 'designpatterns', 'security', 'serverless', 'microservices', 'clientserver', 'distributedsystems', 'serviceorientedarchitecture', 'bigdata', 'apis', 'integrations', 'webdevelopment', 'mobiledevelopment', 'networking', 'cloudcomputing', 'devops', 'projectmanagement', 'agilemethodologies', 'softwarearchitectureframeworks', 'enterprisesoftware']
 ---
 {% youtube  "https://www.youtube.com/watch?v=YXAxQkpTo3I" %}

@@ -2,7 +2,8 @@
 layout: post
 title:  "The time when I almost reinvented WiFi"
 date:   "2023-10-01T19:49:44+00:00"
-categories: youtube
+categories: youtube short
+description: 'The time when I almost reinvented WiFi'
 ---
 {% youtube  "https://www.youtube.com/watch?v=0Dgnmg5wMM4" %}
 {% include anchor-embed.html %}

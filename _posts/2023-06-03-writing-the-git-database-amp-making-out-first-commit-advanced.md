@@ -2,7 +2,8 @@
 layout: post
 title:  "Writing the git database &amp; making out first commit! [Advanced]"
 date:   "2023-06-03T20:34:19+00:00"
-categories: youtube
+categories: youtube deepdive livestream
+description: 'In part 2 of re-implementing git from the ground up, I'm going to focus on: building the git database, writing the internal structs (objects, trees, blobs, commits, refs), continue working on git commit and implement commit chaining, make the first commit using our tool'
 ---
 {% youtube  "https://www.youtube.com/watch?v=U691XdSmvzU" %}
 {% include anchor-embed.html %}

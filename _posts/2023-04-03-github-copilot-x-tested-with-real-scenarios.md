@@ -2,7 +2,8 @@
 layout: post
 title:  "GitHub Copilot X tested with REAL scenarios"
 date:   "2023-04-03T13:24:29+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'How good is GitHub Copilot? Copilot tested with realistic scenarios'
 ---
 {% youtube  "https://www.youtube.com/watch?v=s7AGkcSMiaI" %}
 {% include anchor-embed.html %}

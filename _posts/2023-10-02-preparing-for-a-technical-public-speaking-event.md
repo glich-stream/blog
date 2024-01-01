@@ -2,7 +2,8 @@
 layout: post
 title:  "Preparing for a technical public speaking event"
 date:   "2023-10-02T03:58:37+00:00"
-categories: youtube
+categories: youtube livestream
+description: 'Live stream as I prepare my technical presentation of actions-runner-controller architecture for DevOps Day (October 4th). I discuss Kubernetes operators, how control loops work and a brief walkthrough of the project structure of ARC.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=8D36VUWqZWA" %}
 {% include anchor-embed.html %}

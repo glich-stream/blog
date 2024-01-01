@@ -2,7 +2,8 @@
 layout: post
 title:  "Working on open source tools"
 date:   "2023-09-24T08:11:57+00:00"
-categories: youtube
+categories: youtube short
+description: 'Casual live stream working on my open source tool gh-token'
 ---
 {% youtube  "https://www.youtube.com/watch?v=Nn9Bv7_UCn8" %}
 {% include anchor-embed.html %}

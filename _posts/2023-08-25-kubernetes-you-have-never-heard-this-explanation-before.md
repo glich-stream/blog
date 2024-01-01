@@ -2,7 +2,8 @@
 layout: post
 title:  "Kubernetes: you have never heard this explanation before!"
 date:   "2023-08-25T09:02:00+00:00"
-categories: youtube
+categories: youtube short
+description: 'The history of Kubernetes and the problems it tries to solve.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=P40gpWsLLls" %}
 {% include anchor-embed.html %}

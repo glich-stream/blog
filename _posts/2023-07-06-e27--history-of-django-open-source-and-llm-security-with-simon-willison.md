@@ -2,7 +2,9 @@
 layout: post
 title:  "E27 - History of Django, Open Source and LLM Security with Simon Willison"
 date:   "2023-07-06T18:00:10+00:00"
-categories: youtube
+anchor_url: 'https://podcasters.spotify.com/pod/show/glich/embed/episodes/E27---History-of-Django--Open-Source-and-LLM-Security-with-Simon-Willison-e26kbka/a-aa3g5f1'
+categories: youtube podcast
+description: 'Simon Willison is the creator of Datasette, an open source tool for exploring and publishing data. He is also a co-creator of the Django Web Framework, and has been blogging about web development and programming since 2002. In this episode, we explored the history of Django, we discussed the challenges of maintaining and monetising popular open source projects, and the security problems of large language models.'
 ---
 {% youtube  "https://www.youtube.com/watch?v=jQ3LzxN1Nwg" %}
 {% include anchor-embed.html %}

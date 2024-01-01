@@ -3,6 +3,7 @@ layout: post
 title:  'Job titles in tech are meaningless #softwareengineering #coding'
 date:   '2022-11-14T20:35:01+00:00'
 categories: youtube short
+description: 'Job titles in tech are meaningless'
 ---
 {% youtube  "https://www.youtube.com/watch?v=0VZQM5idTBA" %}
 <br />

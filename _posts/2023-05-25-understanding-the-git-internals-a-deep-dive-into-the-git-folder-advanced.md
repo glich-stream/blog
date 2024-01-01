@@ -2,7 +2,8 @@
 layout: post
 title:  "Understanding the git internals, a deep dive into the .git folder [Advanced]"
 date:   "2023-05-25T07:27:43+00:00"
-categories: youtube
+categories: youtube deepdive
+description: 'Understanding the git internals, a deep dive into the .git folder [Advanced]'
 ---
 {% youtube  "https://www.youtube.com/watch?v=VJB-TYo9_DY" %}
 {% include anchor-embed.html %}

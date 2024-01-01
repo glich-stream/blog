@@ -2,6 +2,7 @@
 layout: post
 title:  'Architecture decision records: software docs that others will read! #softwareengineering #coding'
 date:   '2022-10-26T15:33:30+00:00'
+description: 'How to write software documentation that others will actually read?'
 categories: youtube short
 ---
 {% youtube  "https://www.youtube.com/watch?v=Vsar6-0kTO0" %}
