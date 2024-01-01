@@ -63,7 +63,7 @@ jobs:
           commit_author: link- <568794+Link-@users.noreply.github.com>
 
   build:
-    if: ${{ inputs.force == true || (needs.pull_content.outputs.content_updated == 'false' && github.event_name != 'push' && (inputs.force == false || inputs.force == null)) }}
+    if: ${{ github.event_name == 'push' || inputs.force == true || (needs.pull_content.outputs.content_updated == 'false' && github.event_name != 'push' && (inputs.force == false || inputs.force == null)) }}
     runs-on: ubuntu-latest
     needs: pull_content
 
