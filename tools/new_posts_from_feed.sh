@@ -19,7 +19,7 @@ set -e # exit on error
 
 FEED_URL="$1"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-CONTENT_UPDATED=false
+CONTENT_UPDATED=$FORCE_DEPLOY
 
 if [ -z "$FEED_URL" ]; then
   echo "Usage: ./new_post_from_feed.sh \"https://www.youtube.com/feeds/videos.xml?channel_id=ABCD\""
