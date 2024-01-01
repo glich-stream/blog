@@ -50,6 +50,8 @@ jobs:
 
       - name: Create posts from feed
         id: create_posts
+        env:
+          FORCE_DEPLOY: ${{ inputs.force }}
         run: |
           tools/new_posts_from_feed.sh "https://www.youtube.com/feeds/videos.xml?channel_id=UC6iKOXJ9PD-n8DcFPBjLD0w"
 
