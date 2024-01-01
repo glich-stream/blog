@@ -3,7 +3,7 @@ layout: post
 title:  "Strategies for Working From Home as a Software Engineer!"
 date:   "2023-02-09T14:00:23+00:00"
 categories: youtube deepdive
-description: 'Working from home isn't easy, but with the right practices, it can be more productive and efficient. Here is what I learned over the last 4 years of working fully remotely in companies spanning at least 3 timezones.'
+description: "Working from home isn't easy, but with the right practices, it can be more productive and efficient. Here is what I learned over the last 4 years of working fully remotely in companies spanning at least 3 timezones."
 ---
 {% youtube  "https://www.youtube.com/watch?v=SBCZbJRp7Pk" %}
 <br />

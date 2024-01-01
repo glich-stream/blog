@@ -3,7 +3,7 @@ layout: post
 title:  'Programming is less fun with time! #softwareengineering #coding'
 date:   '2022-11-02T12:04:55+00:00'
 categories: youtube short
-description: 'If you want to keep enjoying programming, don't make it your job.'
+description: "If you want to keep enjoying programming, don't make it your job."
 ---
 {% youtube  "https://www.youtube.com/watch?v=RMmDPuluIj0" %}
 <br />

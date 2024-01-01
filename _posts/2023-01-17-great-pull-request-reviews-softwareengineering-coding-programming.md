@@ -3,7 +3,7 @@ layout: post
 title:  "Great Pull Request Reviews #softwareengineering #coding #programming"
 date:   "2023-01-17T14:49:48+00:00"
 categories: youtube
-description: 'Code reviews don't have to be complicated and obscure. Here are some tips for great pull request reviews!'
+description: "Code reviews don't have to be complicated and obscure. Here are some tips for great pull request reviews!"
 ---
 {% youtube  "https://www.youtube.com/watch?v=uvEyRtZtl60" %}
 <br />

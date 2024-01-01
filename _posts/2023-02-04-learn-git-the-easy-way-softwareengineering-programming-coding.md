@@ -3,7 +3,7 @@ layout: post
 title:  "Learn git the easy way! #softwareengineering #programming #coding"
 date:   "2023-02-04T15:19:19+00:00"
 categories: youtube short
-description: 'Learning git doesn't have to be difficult. Now you can visualise all your git operations right from your terminal!'
+description: "Learning git doesn't have to be difficult. Now you can visualise all your git operations right from your terminal!"
 ---
 {% youtube  "https://www.youtube.com/watch?v=b0DZ_RD-ZGk" %}
 <br />

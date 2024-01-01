@@ -3,7 +3,7 @@ layout: post
 title:  "Building a GitHub CLI extension in Go (Part 2)"
 date:   "2023-04-23T15:15:25+00:00"
 categories: youtube livestream deepdive
-description: 'A super casual live stream where I'll continue building gh-stars, a new GitHub CLI extension. (Part 2)'
+description: "A super casual live stream where I'll continue building gh-stars, a new GitHub CLI extension. (Part 2)"
 ---
 {% youtube  "https://www.youtube.com/watch?v=5wA0wwZ8FuU" %}
 {% include anchor-embed.html %}
