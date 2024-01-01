@@ -24,7 +24,7 @@ title: glich.stream
 tagline: Engineering lessons from the real world!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  glich is a platform where professional software engineers, thought leaders, engineering managers, and founders share their insights and expertise on code, system design, and engineering management. From moderate to advanced topics, glich has something for every tech professional. Explore our content, connect with fellow engineers, and level up! glich was founded by Bassem Dghaidi in 2021
+  glich is a platform for insights software engineering, system design, and engineering management. From moderate to advanced topics, glich has something for every tech professional. Explore advanced topics, connect with fellow engineers, and level up! glich was founded by Bassem Dghaidi in 2021
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://blog.glich.stream'
